@@ -1,0 +1,29 @@
+{
+  "name": "keyboard",
+  "authors": [
+    "Fumo <fumo.sujimoshi@gmail.com>"
+  ],
+  "description": "landing",
+  "main": "index.js",
+  "keywords": [
+    "landing",
+    "bower",
+    "npm"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flat-ui": "^2.3.0",
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}

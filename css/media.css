@@ -1,0 +1,300 @@
+/* Для всех у кого размер экрана больше 768px, планшет десктоп, и большие экраны */
+/* Для всех у кого размер экрана больше 992px десктоп и больше */
+@media (max-width: 992px) {
+  .bg {
+    background: none;
+  }
+  header {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .list_style .more {
+    text-align: center;
+  }
+  .right_nav_menu {
+    margin-bottom: 2rem;
+    display: inline-block;
+    text-align: left;
+  }
+  .right_nav_menu a {
+    width: 85%;
+  }
+  .left_nav_menu {
+    margin-top: 2rem;
+  }
+  .left_nav_menu .more {
+    margin-top: 2rem;
+  }
+  .holl_time img {
+    display: none;
+  }
+  .head_third {
+    text-align: center;
+  }
+  .head_third .nav_third a {
+    font-size: 2rem;
+    line-height: 1;
+    width: 85%;
+  }
+  .head_third ul {
+    display: inline-block;
+    text-align: left;
+  }
+  .pole_dance_block,
+  .pole_dance_a_block,
+  .pole_dance_b_block,
+  .pole_dance_c_block,
+  .pole_dance_ex_block,
+  .aerial_hoop_big_block,
+  .aerial_silk_big_block,
+  .twerk_big_block {
+    background: url(../imges/last_lp/bg_mob_last.png) center center no-repeat;
+    background-size: auto 100%;
+  }
+  .customer_block {
+    margin: 0 auto;
+  }
+  .customer_block .first_logo_mini {
+    text-align: center;
+  }
+  .customer_block .right_block_cust p {
+    width: 90%;
+  }
+  .customer_block .right_block_cust img {
+    width: 5%;
+  }
+}
+/* Для всех у кого размер экрана больше 1200px большие экраны и больше */
+/* Только для мобильных, для те у кого экран меньше 768px */
+@media (max-width: 768px) {
+  .bg {
+    background: none;
+  }
+  .left_nav_menu {
+    margin-top: 1rem;
+  }
+  .left_nav_menu a {
+    text-align: center;
+  }
+  .left_nav_menu .more {
+    margin-top: 1rem;
+  }
+  .right_nav_menu {
+    margin-bottom: 1rem;
+  }
+  .block_kids {
+    padding-bottom: 3rem;
+  }
+  .customer_dance_kids .silk_title {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+  }
+  .customer_dance_kids .silk_text {
+    font-size: 2rem;
+  }
+  .customer_dance_kids .silk_logo {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .customer_dance_kids .silk_logo img {
+    text-align: center;
+    display: inline;
+  }
+  .silk_block {
+    padding-bottom: 12rem;
+  }
+  .hoop_block {
+    padding-bottom: 12rem;
+  }
+  .pole_block {
+    padding-bottom: 14rem;
+  }
+  .caramel_block {
+    background-size: 100% 100%;
+    padding-bottom: 8rem;
+  }
+  .caramel_block .caramel_wrap div:nth-child(2) {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .caramel_block .caramel_wrap div:nth-child(3) {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .caramel_block .caramel_wrap div:nth-child(4) {
+    text-align: center;
+  }
+  .caramel_block .caramel_wrap span {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .customer_dance .silk_title {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .customer_dance .silk_text {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .customer_dance .silk_logo {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .customer_dance .silk_logo img {
+    text-align: center;
+    display: inline;
+  }
+  .poledance_block,
+  .aerial_silk_block,
+  .aerial_hoop_block,
+  .fly_block,
+  .twerk_block,
+  .trx_block {
+    padding-bottom: 12rem;
+  }
+  .exotic_block,
+  .stretching_block,
+  .ballet_block {
+    padding-bottom: 15rem;
+  }
+}
+/* Только для планштов, для те у кого экран больше 768px и меньше 992px */
+@media (min-width: 768px) and (max-width: 992px) {
+  .customer_dance_kids .silk_title {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+  }
+  .customer_dance_kids .silk_text {
+    font-size: 2rem;
+  }
+  .customer_dance_kids .silk_logo {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .customer_dance_kids .silk_logo img {
+    text-align: center;
+    display: inline;
+  }
+  .customer_dance .silk_title {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .customer_dance .silk_text {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .customer_dance .silk_logo {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .customer_dance .silk_logo img {
+    text-align: center;
+    display: inline;
+  }
+  .caramel_block {
+    background-size: 100% 100%;
+    padding-bottom: 8rem;
+  }
+  .caramel_block .caramel_wrap div:nth-child(2) {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .caramel_block .caramel_wrap div:nth-child(3) {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .caramel_block .caramel_wrap div:nth-child(4) {
+    text-align: center;
+  }
+  .caramel_block .caramel_wrap span {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .silk_block {
+    padding-bottom: 30rem;
+  }
+  .hoop_block {
+    padding-bottom: 30rem;
+  }
+  .pole_block {
+    padding-bottom: 33rem;
+  }
+  .block_kids {
+    padding-bottom: 8rem;
+  }
+  .poledance_block,
+  .aerial_silk_block,
+  .aerial_hoop_block,
+  .fly_block,
+  .twerk_block,
+  .trx_block {
+    padding-bottom: 31rem;
+  }
+  .exotic_block,
+  .stretching_block,
+  .ballet_block {
+    padding-bottom: 33rem;
+  }
+  .customer_block .right_block_cust p {
+    width: 90%;
+  }
+  .customer_block .right_block_cust img {
+    width: 5%;
+  }
+}
+/* Только для десктоп, для те у кого экран больше 992px и меньше 1200px */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .silk_block {
+    padding-bottom: 33rem;
+  }
+  .hoop_block {
+    padding-bottom: 33rem;
+  }
+  .pole_block {
+    padding-bottom: 37rem;
+  }
+  .poledance_block,
+  .aerial_silk_block,
+  .aerial_hoop_block,
+  .fly_block,
+  .twerk_block,
+  .trx_block {
+    padding-bottom: 36rem;
+  }
+  .exotic_block,
+  .stretching_block,
+  .ballet_block {
+    padding-bottom: 38rem;
+  }
+}
+/* Только для больших экранов, для те у кого экран больше 1200px */
+@media (min-width: 1200px) {
+  .silk_block {
+    padding-bottom: 43rem;
+  }
+  .hoop_block {
+    padding-bottom: 43rem;
+  }
+  .pole_block {
+    padding-bottom: 50rem;
+  }
+  .poledance_block,
+  .aerial_silk_block,
+  .aerial_hoop_block,
+  .fly_block,
+  .twerk_block,
+  .trx_block {
+    padding-bottom: 47rem;
+  }
+  .exotic_block,
+  .stretching_block,
+  .ballet_block {
+    padding-bottom: 50rem;
+  }
+}
