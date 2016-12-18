@@ -1,0 +1,151 @@
+.Reviews {
+  background-image: url("../images/Page/reviews-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 6rem;
+  .Reviews-row {
+    .flex();
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .Reviews-col {
+    .xl-col(50%);
+  }
+  .ReviewsItem-col {
+    .xl-col(48%);
+    @media @md {
+      margin-left: 40%;
+    }
+  }
+  .arrow_cont {
+    position: absolute;
+    top: 50%;
+
+    //bottom:0;
+    display: inline-flex;
+    align-items: center;
+    transform: translateY(-50%);
+    z-index: 999;
+    height:6rem;
+    width:5rem;
+      img {
+        height:6rem;
+        width:5rem;
+      }
+    //background: rgba(255, 255, 255, 0.8);
+    &.prev {
+      left:-3.5rem;
+      border-radius:50%;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+    &.next {
+      right:-3.5rem;
+      border-radius:50%;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+    transition: 1s all;
+    background: rgba(227, 202, 225, 0);
+    &:hover {
+      background: rgba(227, 202, 225, 0.3);
+    }
+  }
+  .ReviewsItem {
+    &:hover {
+      .ReviewsItem-desc {
+        border: 20px solid rgba(5, 2, 14, 0.5);
+      }
+    }
+    .ReviewsItem-title {
+      .ReviewsItem-img {
+        img {
+          margin-left:2rem;
+          height: 25rem;
+          width:25rem;
+          @media @xs, @sm {
+            margin-left:0;
+          }
+        }
+      }
+      .ReviewsItem-name {
+        margin-left:3rem;
+        @media @xs, @sm, @md {
+          margin-left:0;
+        }
+        h3 {
+          font-size: 3.6rem;
+          line-height: 4.4rem;
+          font-weight: 700;
+          color: white;;
+          margin: 1.5rem auto 0.5rem;
+          @media @xs {
+            margin: 1rem auto 0.5rem;
+          }
+        }
+        .ReviewsItem-nick {
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 4.4rem;
+          color: @pink;
+        }
+      }
+    }
+    .ReviewsItem-desc {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      border: 20px solid rgba(5, 2, 14, 0.1);
+      transition: border 0.5s ease;
+      margin-top:-9rem;
+      @media @xs {
+        margin-top: 0;
+        margin-bottom: 2rem;
+      }
+      @media @md {
+        align-items: center;
+      }
+      .ReviewsItem-smile {
+        margin-bottom: 2rem;
+        margin-left:3rem;
+        @media @xs, @sm {
+          margin-left:1rem;
+        }
+        @media @md {
+          margin-left: 0;
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: white;
+          line-height: 1.4rem;
+          margin: 1rem auto 0.7rem;
+          @media @xs {
+            margin-left:0;
+          }
+        }
+        img {
+          margin-right: 1rem;
+          display: inline-flex;
+
+        }
+      }
+      .ReviewsItem-text {
+        p {
+          font-size: 1.4rem;
+          line-height: 2.4rem;
+          color: white;
+          font-weight: 400;
+          margin: 0 0 2.1rem 1.9rem;
+          @media @xs {
+            margin-left:1rem;
+          }
+        }
+      }
+    }
+  }
+  .slick-dotted.slick-slider {
+    margin-bottom:0;
+  }
+}

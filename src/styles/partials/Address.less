@@ -1,0 +1,28 @@
+.Addresses {
+	.flex(2rem);
+	.Addresses-col {
+		.xs-col(100%);
+		.sm-col(auto);
+		@media @xs {
+			margin-bottom: 2rem;
+			text-align: center;
+		}
+		&.Addresses-col_frank {
+			@media @sm {
+				margin-top: -4.5rem;
+			}
+		}
+	}
+}
+.Address {
+	display: flex;
+	flex-direction: column;
+	line-height:2.4rem;
+	.Address-link {
+		font-size:1.2rem;
+		white-space: nowrap;
+	}
+	.Address-city {
+		font-size:1.8rem;
+	}
+}

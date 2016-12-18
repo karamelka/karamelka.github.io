@@ -1,18 +1,12 @@
 {
-  "name": "keyboard",
-  "authors": [
-    "Fumo <fumo.sujimoshi@gmail.com>"
-  ],
-  "description": "landing",
+  "name": "caramel",
+  "description": "",
   "main": "index.js",
-  "keywords": [
-    "landing",
-    "bower",
-    "npm"
+  "authors": [
+    "sujimoshi"
   ],
   "license": "MIT",
   "homepage": "",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -21,9 +15,8 @@
     "tests"
   ],
   "dependencies": {
-    "flat-ui": "^2.3.0",
-    "jquery": "^3.1.0",
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.6.3"
+    "jquery": "^3.1.1",
+    "normalize-css": "normalize.css#^5.0.0",
+    "slick-carousel": "^1.6.0"
   }
 }
