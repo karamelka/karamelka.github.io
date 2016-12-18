@@ -1,0 +1,48 @@
+.Team {
+  background: #f1f6ff;
+  padding-bottom: 6rem;
+  .Team-row {
+    .flex(1rem);
+    align-items: center;
+    justify-content: center;
+  }
+  .Team-col {
+    .xl-col(25%);
+    padding: 0.5rem;
+  }
+  .TeamItem {
+    transition: transform 0.6s ease;
+    &:hover {
+      transform: translateY(-2rem);
+      .TeamItem-info {
+        box-shadow: 0 10px 20px rgba(5, 2, 14, 0.1);
+      }
+    }
+    .TeamItem-img {
+      img {
+        height:30rem;
+        width:100%;
+      }
+    }
+    .TeamItem-info {
+      padding:2rem 2rem 1.6rem;
+      background: white;
+      margin-top:-1rem;
+      transition: box-shadow 0.6s ease;
+      h3 {
+        font-size:2.4rem;
+        color: black;
+        font-weight:700;
+        line-height:3.4rem;
+        margin-bottom:1.4rem;
+      }
+      p {
+        font-size:1.4rem;
+        color: #666;
+        font-weight:500;
+        line-height:3.4rem;
+        margin:2rem auto 1.4rem;
+      }
+    }
+  }
+}

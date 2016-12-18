@@ -1,0 +1,25 @@
+.Footer {
+	padding: 3rem 0;
+	background-color: #05020e;
+	color: white;
+	.Footer-row {
+		.flex();
+	}
+	.Footer-col {
+		.xs-col(100%);
+		&.Footer-col_address {
+			.sm-col(70%);
+			.md-col(78%);
+			.lg-col(70%);
+		}
+		&.Footer-col_social {
+			.sm-col(30%);
+			.md-col(22%);
+			.lg-col(30%);
+			text-align: right;
+			@media @xs {
+				text-align: center;
+			}
+		}
+	}
+}

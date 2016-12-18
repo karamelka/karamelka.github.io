@@ -1,0 +1,33 @@
+.Shop {
+  background-image: url("../images/Page/clothe-shop.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 6rem;
+  text-align: center;
+  .Shop-row {
+    .flex();
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Shop-col {
+    .md-col(50%);
+    .xs-col(100%);
+  }
+  .Shop-tex {
+    color: black;
+    font-size:3rem;
+    font-weight:400;
+    line-height:4.4rem;
+    @media @xs {
+      font-size: 2.4rem;
+      line-height: 3rem;
+    }
+  }
+  .Button_Shop {
+    text-transform: uppercase;
+    font-size:1.2rem;
+    font-weight:500;
+    line-height:3.4rem;
+  }
+}

@@ -1,0 +1,70 @@
+@hoff:0;
+@soc-voff:5px;
+@blur:20px;
+
+.Social {
+	.inline-flex(0);
+	justify-content: flex-end;
+	margin: -.5rem;
+	&.Social_header {
+		@media @md {
+			flex-direction: column;
+		}
+	}
+	.Social-list {
+		.inline-flex(0);
+		list-style: none;
+		margin: 0;
+	}
+	.Social-item {
+		margin: .5rem;
+	}
+	.Social-link {
+		display: inline-flex;
+		width: 3.6rem;
+		height: 3.6rem;
+		border-radius: 50%;
+		transition: box-shadow .5s ease;
+		img {
+			margin:auto;
+			height: 1.6rem;
+			width: 1.6rem;
+		}
+		&.Social-link_vk {
+			background-color: #507299;
+			&:hover {
+				box-shadow: @hoff @soc-voff @blur #507299;
+			}
+		}
+		&.Social-link_viber {
+			background-color: #7C529E;
+			&:hover {
+				box-shadow: @hoff @soc-voff @blur #7C529E;
+			}
+		}
+		&.Social-link_twitter {
+			background-color: #55abee;
+			&:hover {
+				box-shadow: @hoff @soc-voff @blur #55abee;
+			}
+		}
+		&.Social-link_facebook {
+			background-color: #3664a2;
+			&:hover {
+				box-shadow: @hoff @soc-voff @blur #3664a2;
+			}
+		}
+		&.Social-link_youtube {
+			background-color: #cd201f;
+			&:hover {
+				box-shadow: @hoff @soc-voff @blur #cd201f;
+			}
+		}
+		&.Social-link_instagram {
+			background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+			&:hover {
+				box-shadow: @hoff @soc-voff @blur #fec66d;
+			}
+		}
+	}
+}
