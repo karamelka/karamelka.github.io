@@ -17,6 +17,9 @@
 @md: ~"(min-width: @{md-min}) and (max-width: @{md-max})";
 @lg: ~"(min-width: @{lg-min}) and (max-width: @{lg-max})";
 @xl: ~"(min-width: @{xl-min})";
+@2xl: ~"(min-width: 1439px)";
+@3xl: ~"(min-width: 1599px)";
+@2k: ~"(min-width: 1919px)";
 
 .container {
 	margin-left: auto;
@@ -47,8 +50,8 @@
 	box-sizing: border-box;
 	flex: 0 1 auto;
 	flex-direction: row;
-	//margin-right: (@gutters / -2);
-	//margin-left: (@gutters / -2);
+	margin-right: (@gutters / -2);
+	margin-left: (@gutters / -2);
 	& > * {
 		box-sizing: border-box;
 		padding-right: @gutters / 2;
@@ -73,34 +76,34 @@
 
 .xs-col(@width) {
 	flex-basis: @width;
-	max-width: @width;
+	width: @width;
 }
 
 .sm-col(@width) {
 	@media (min-width: @sm-min) {
 		flex-basis: @width;
-		max-width: @width;
+		width: @width;
 	}
 }
 
 .md-col(@width) {
 	@media (min-width: @md-min) {
 		flex-basis: @width;
-		max-width: @width;
+		width: @width;
 	}
 }
 
 .lg-col(@width) {
 	@media (min-width: @lg-min) {
 		flex-basis: @width;
-		max-width: @width;
+		width: @width;
 	}
 }
 
 .xl-col(@width) {
 	@media (min-width: @xl-min) {
 		flex-basis: @width;
-		max-width: @width;
+		width: @width;
 	}
 }
 

@@ -1,7 +1,7 @@
 .Page {
   background-image: url("../images/Page/block-1-bg.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% auto;
   background-position: center center;
   padding-top:11rem;
   padding-bottom:11rem;
@@ -40,6 +40,9 @@
       font-size:1.8rem;
       line-height:3.4rem;
     }
+  }
+  @media @xs, @sm, @md {
+    background-size: auto 100%;
   }
 }
 
