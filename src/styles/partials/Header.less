@@ -1,5 +1,5 @@
 .Header {
-	padding: 2rem 0;
+	padding: 1rem 0;
 	background-color: rgba(0, 0, 0, .5);
 	color: white;
 	position: fixed;
@@ -11,6 +11,10 @@
 		align-items: center;
 		justify-content: space-between;
 	}
+	.Header-logoText {
+		margin: 0;
+		text-align: center;
+	}
 	.Header-col {
 		.xs-col(100%);
 		.sm-col(auto);
@@ -20,8 +24,12 @@
 		}
 	}
 	.Header-col_logo {
+		text-align: center;
 	}
 	.Header-col_phone {
+		.sm-col(50%);
+		.md-col(33%);
+		.lg-col(auto);
 	}
 	.Header-col_social {
 	}

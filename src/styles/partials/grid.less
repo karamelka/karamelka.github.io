@@ -21,6 +21,10 @@
 @3xl: ~"(min-width: 1599px)";
 @2k: ~"(min-width: 1919px)";
 
+* {
+	box-sizing: border-box;
+}
+
 .container {
 	margin-left: auto;
 	margin-right: auto;
@@ -47,13 +51,11 @@
 .flex(@gutters: 3rem) {
 	display: flex;
 	flex-wrap: wrap;
-	box-sizing: border-box;
 	flex: 0 1 auto;
 	flex-direction: row;
 	margin-right: (@gutters / -2);
 	margin-left: (@gutters / -2);
 	& > * {
-		box-sizing: border-box;
 		padding-right: @gutters / 2;
 		padding-left: @gutters / 2;
 	}
@@ -62,13 +64,11 @@
 .inline-flex(@gutters: 3rem) {
 	display: inline-flex;
 	flex-wrap: wrap;
-	box-sizing: border-box;
 	flex: 0 1 auto;
 	flex-direction: row;
 	margin-right: (@gutters / -2);
 	margin-left: (@gutters / -2);
 	& > * {
-		box-sizing: border-box;
 		padding-right: @gutters / 2;
 		padding-left: @gutters / 2;
 	}
@@ -104,36 +104,5 @@
 	@media (min-width: @xl-min) {
 		flex-basis: @width;
 		width: @width;
-	}
-}
-
-
-.xs(@content) {
-	@media (max-width: @xs-max) {
-		@content();
-	}
-}
-
-.sm(@content) {
-	@media (min-width: @sm-min) and (max-width: @sm-max) {
-		@content();
-	}
-}
-
-.md(@content) {
-	@media (min-width: @md-min) and (max-width: @md-max) {
-		@content();
-	}
-}
-
-.lg(@content) {
-	@media (min-width: @lg-min) and (max-width: @lg-max) {
-		@content();
-	}
-}
-
-.xl(@content) {
-	@media (min-width: @xl-min) {
-		@content();
 	}
 }

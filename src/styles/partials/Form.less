@@ -1,0 +1,84 @@
+.FormBlock {
+	padding: 2rem;
+	border-radius: 4px;
+	background-color: rgba(5, 2, 14, 0.5);
+}
+
+.Form {
+	&.Form-white {
+		color: white;
+	}
+	legend {
+		font-size: 1.8rem;
+		font-weight: 500;
+		line-height: 1.2;
+		display: block;
+		width: 100%;
+		margin-bottom: 1.7rem;
+	}
+	label {
+		font-size: 1.4rem;
+		font-weight: 400;
+		line-height: 1.2;
+		margin-bottom: .8rem;
+		display: inline-block;
+	}
+	.Form-group {
+		margin-bottom: 2rem;
+		white-space: nowrap;
+		* {
+			white-space: normal;
+		}
+	}
+	.Form-control {
+		background-color: white;
+		border-radius: 4px;
+		border: 0;
+		line-height: 1;
+		display: block;
+		width: 100%;
+		padding: 1rem;
+		font-size: 1.8rem;
+		font-weight: 400;
+		&.Form-control_invisible {
+			opacity: 0;
+			position: absolute;
+		}
+		&:focus {
+			outline: none;
+		}
+		&[type=checkbox], &[type=radio] {
+			display: inline-block;
+			vertical-align: middle;
+			width: auto;
+			margin-right: .5rem;
+			cursor: pointer;
+			&:checked ~ .Form-checkbox {
+				background-image: url('/dist/images/MainPage/check-icon.svg');
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+			& ~ label {
+				vertical-align: middle;
+				cursor: pointer;
+				margin: 0;
+			}
+		}
+	}
+	.Form-checkbox {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: .5rem;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 4px;
+		background-color: white;
+		& ~ [type=checkbox] {
+			opacity: 0;
+			position: absolute;
+		}
+		& ~ label {
+			line-height: 2rem;
+		}
+	}
+}

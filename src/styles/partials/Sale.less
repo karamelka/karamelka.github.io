@@ -1,10 +1,13 @@
 .Sale {
   text-align: center;
   background-image: url("../images/Page/block-2-bg.png");
-  background-size: 100% 100%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom center;
   padding-bottom:6rem;
+  @media @2k {
+    background-size: 100% auto;
+  }
   @media @xs,@md {
     background: rgba(5, 2, 14, 0.4);
   }

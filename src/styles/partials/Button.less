@@ -2,8 +2,12 @@
 	padding: 2rem 4rem;
 	border-radius: 100px;
 	background-color: @pink;
+	border: 0;
 	display: inline-block;
 	transition: box-shadow .5s ease, transform .5s ease;
+	cursor: pointer;
+	line-height: 1;
+	color: white;
 	&.Button_circle {
 		border-radius: 50%;
 		display: inline-flex;
@@ -30,8 +34,8 @@
 	}
 	&.Button_sm {
 		padding: .7rem 1.5rem;
-		height: 17px;
 		img {
+			float: right;
 			width: auto;
 			height: 16px;
 		}
@@ -46,5 +50,19 @@
 		box-shadow: 0 5px 10px @pink;
 		//transform: scale(1.05);
 		color: white;
+	}
+	&.Button_social {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 3.6rem;
+		height: 3.6rem;
+		border-radius: 50%;
+		transition: box-shadow .5s ease;
+		padding: 0;
+		img {
+			height: 1.6rem;
+			width: 1.6rem;
+		}
 	}
 }

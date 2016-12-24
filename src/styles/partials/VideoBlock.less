@@ -13,6 +13,9 @@
 	background-repeat: no-repeat;
 	transition: transform 2s;
 	will-change: transform;
+	@media @2k {
+		background-size: 100% auto;
+	}
 	&.VideoBlock_active {
 		transform: translateY(-100%);
 	}

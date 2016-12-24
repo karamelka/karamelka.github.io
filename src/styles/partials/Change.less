@@ -1,0 +1,74 @@
+.Change {
+	background-image: url('/dist/images/MainPage/change-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 5rem 0;
+	background-size: auto 100%;
+	@media @2k {
+		background-size: 100% auto;
+	}
+	.Change-title {
+		color: white;
+		font-size: 48px;
+		font-weight: 700;
+		//line-height: 24px;
+		text-align: center;
+		margin: 0 0 4rem 0;
+	}
+	.Change-row {
+		.flex(1rem);
+		justify-content: space-between;
+		margin-bottom: -1rem;
+		@media @xs, @sm {
+			justify-content: space-around;
+		}
+	}
+	.Change-col {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	.Change-num {
+		display: block;
+		color: @yellow;
+		font-size: 8rem;
+		font-weight: 700;
+		line-height: 1;
+	}
+	.Change-text {
+		margin: 0;
+		color: white;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 24px;
+	}
+}
+
+.ChangeForm {
+	margin-top: 5rem;
+	margin-bottom: -2rem;
+	.ChangeForm-row {
+		.flex();
+		align-items: center;
+		margin-bottom: -2rem;
+	}
+	.ChangeForm-col {
+		&.ChangeForm-col_name {
+			.xs-col(100%);
+			.sm-col(50%);
+		}
+		&.ChangeForm-col_phone {
+			.xs-col(100%);
+			.sm-col(50%);
+		}
+		&.ChangeForm-col_submit {
+			margin-left: auto;
+			@media @xs {
+				text-align: center;
+				margin: 0 auto;
+			}
+		}
+	}
+	.ChangeForm-submit {
+		color: white;
+	}
+}

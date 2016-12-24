@@ -1,5 +1,8 @@
 @import "../fonts/roboto/roboto.css";
 @import (inline) "/bower_components/normalize-css/normalize.css";
+* {
+  box-sizing: border-box;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -30,6 +33,9 @@
     max-width: 100%;
   }
 }
+.pink {
+  color: #e30068;
+}
 html {
   font-size: 62.5%;
 }
@@ -59,7 +65,7 @@ a:hover {
   text-decoration: none;
 }
 .Header {
-  padding: 2rem 0;
+  padding: 1rem 0;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   position: fixed;
@@ -70,7 +76,6 @@ a:hover {
 .Header .Header-row {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: -1.5rem;
@@ -79,9 +84,12 @@ a:hover {
   justify-content: space-between;
 }
 .Header .Header-row > * {
-  box-sizing: border-box;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
+}
+.Header .Header-logoText {
+  margin: 0;
+  text-align: center;
 }
 .Header .Header-col {
   flex-basis: 100%;
@@ -97,6 +105,27 @@ a:hover {
   .Header .Header-col {
     text-align: center;
     margin: .5rem 0;
+  }
+}
+.Header .Header-col_logo {
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .Header .Header-col_phone {
+    flex-basis: 50%;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .Header .Header-col_phone {
+    flex-basis: 33%;
+    width: 33%;
+  }
+}
+@media (min-width: 992px) {
+  .Header .Header-col_phone {
+    flex-basis: auto;
+    width: auto;
   }
 }
 @media (max-width: 575px) {
@@ -124,22 +153,37 @@ a:hover {
   }
 }
 .Phone {
-  display: inline-flex;
-  flex-wrap: nowrap;
-  align-items: center;
+  margin: -0.5rem;
+  text-align: center;
+}
+.Phone > * {
+  margin: 0 .5rem;
 }
 .Phone .Phone-link {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 2.3rem;
-  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  white-space: nowrap;
+}
+.Phone .Phone-social {
+  margin: 0 auto;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .Phone {
+    text-align: right;
+  }
 }
 .Button {
   padding: 2rem 4rem;
   border-radius: 100px;
   background-color: #e30068;
+  border: 0;
   display: inline-block;
   transition: box-shadow 0.5s ease, transform 0.5s ease;
+  cursor: pointer;
+  line-height: 1;
+  color: white;
 }
 .Button.Button_circle {
   border-radius: 50%;
@@ -164,9 +208,9 @@ a:hover {
 }
 .Button.Button_sm {
   padding: .7rem 1.5rem;
-  height: 17px;
 }
 .Button.Button_sm img {
+  float: right;
   width: auto;
   height: 16px;
 }
@@ -179,6 +223,20 @@ a:hover {
 .Button:hover {
   box-shadow: 0 5px 10px #e30068;
   color: white;
+}
+.Button.Button_social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  transition: box-shadow 0.5s ease;
+  padding: 0;
+}
+.Button.Button_social img {
+  height: 1.6rem;
+  width: 1.6rem;
 }
 .VideoBlock {
   position: relative;
@@ -195,6 +253,11 @@ a:hover {
   background-repeat: no-repeat;
   transition: transform 2s;
   will-change: transform;
+}
+@media (min-width: 1919px) {
+  .VideoBlock {
+    background-size: 100% auto;
+  }
 }
 .VideoBlock.VideoBlock_active {
   transform: translateY(-100%);
@@ -283,14 +346,12 @@ a:hover {
 .Footer .Footer-row {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: -1.5rem;
   margin-left: -1.5rem;
 }
 .Footer .Footer-row > * {
-  box-sizing: border-box;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -345,14 +406,12 @@ a:hover {
 .Addresses {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: -1rem;
   margin-left: -1rem;
 }
 .Addresses > * {
-  box-sizing: border-box;
   padding-right: 1rem;
   padding-left: 1rem;
 }
@@ -392,7 +451,6 @@ a:hover {
 .Social {
   display: inline-flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: 0;
@@ -401,7 +459,6 @@ a:hover {
   margin: -0.5rem;
 }
 .Social > * {
-  box-sizing: border-box;
   padding-right: 0;
   padding-left: 0;
 }
@@ -413,7 +470,6 @@ a:hover {
 .Social .Social-list {
   display: inline-flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: 0;
@@ -422,7 +478,6 @@ a:hover {
   margin: 0;
 }
 .Social .Social-list > * {
-  box-sizing: border-box;
   padding-right: 0;
   padding-left: 0;
 }
@@ -477,13 +532,24 @@ a:hover {
 .Social .Social-link.Social-link_instagram:hover {
   box-shadow: 0 5px 20px #fec66d;
 }
+.Social .Social-link.Social-link_phone {
+  background-color: #e30068;
+}
+.Social .Social-link.Social-link_phone:hover {
+  box-shadow: 0 5px 20px #e30068;
+}
+.Social .Social-link.Social-link_whatsapp {
+  background-color: #25D366;
+}
+.Social .Social-link.Social-link_whatsapp:hover {
+  box-shadow: 0 5px 20px #25D366;
+}
 .Founder {
   background-color: #f1f6ff;
 }
 .Founder .Founder-row {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: -1.5rem;
@@ -492,7 +558,6 @@ a:hover {
   position: relative;
 }
 .Founder .Founder-row > * {
-  box-sizing: border-box;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -623,6 +688,196 @@ a:hover {
     display: none;
   }
 }
+.Change {
+  background-image: url('/dist/images/MainPage/change-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem 0;
+  background-size: auto 100%;
+}
+@media (min-width: 1919px) {
+  .Change {
+    background-size: 100% auto;
+  }
+}
+.Change .Change-title {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 4rem 0;
+}
+.Change .Change-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  flex-direction: row;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+  justify-content: space-between;
+  margin-bottom: -1rem;
+}
+.Change .Change-row > * {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+@media (max-width: 575px), (min-width: 576px) and (max-width: 767px) {
+  .Change .Change-row {
+    justify-content: space-around;
+  }
+}
+.Change .Change-col {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.Change .Change-num {
+  display: block;
+  color: #fad60e;
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.Change .Change-text {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.ChangeForm {
+  margin-top: 5rem;
+  margin-bottom: -2rem;
+}
+.ChangeForm .ChangeForm-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  flex-direction: row;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+  align-items: center;
+  margin-bottom: -2rem;
+}
+.ChangeForm .ChangeForm-row > * {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.ChangeForm .ChangeForm-col.ChangeForm-col_name {
+  flex-basis: 100%;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .ChangeForm .ChangeForm-col.ChangeForm-col_name {
+    flex-basis: 50%;
+    width: 50%;
+  }
+}
+.ChangeForm .ChangeForm-col.ChangeForm-col_phone {
+  flex-basis: 100%;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .ChangeForm .ChangeForm-col.ChangeForm-col_phone {
+    flex-basis: 50%;
+    width: 50%;
+  }
+}
+.ChangeForm .ChangeForm-col.ChangeForm-col_submit {
+  margin-left: auto;
+}
+@media (max-width: 575px) {
+  .ChangeForm .ChangeForm-col.ChangeForm-col_submit {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+.ChangeForm .ChangeForm-submit {
+  color: white;
+}
+.FormBlock {
+  padding: 2rem;
+  border-radius: 4px;
+  background-color: rgba(5, 2, 14, 0.5);
+}
+.Form.Form-white {
+  color: white;
+}
+.Form legend {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  margin-bottom: 1.7rem;
+}
+.Form label {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: .8rem;
+  display: inline-block;
+}
+.Form .Form-group {
+  margin-bottom: 2rem;
+  white-space: nowrap;
+}
+.Form .Form-group * {
+  white-space: normal;
+}
+.Form .Form-control {
+  background-color: white;
+  border-radius: 4px;
+  border: 0;
+  line-height: 1;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.Form .Form-control.Form-control_invisible {
+  opacity: 0;
+  position: absolute;
+}
+.Form .Form-control:focus {
+  outline: none;
+}
+.Form .Form-control[type=checkbox],
+.Form .Form-control[type=radio] {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin-right: .5rem;
+  cursor: pointer;
+}
+.Form .Form-control[type=checkbox]:checked ~ .Form-checkbox,
+.Form .Form-control[type=radio]:checked ~ .Form-checkbox {
+  background-image: url('/dist/images/MainPage/check-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.Form .Form-control[type=checkbox] ~ label,
+.Form .Form-control[type=radio] ~ label {
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0;
+}
+.Form .Form-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 4px;
+  background-color: white;
+}
+.Form .Form-checkbox ~ [type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+.Form .Form-checkbox ~ label {
+  line-height: 2rem;
+}
 .Page {
   background-image: url("../images/Page/block-1-bg.png");
   background-repeat: no-repeat;
@@ -635,7 +890,6 @@ a:hover {
 .Page .Page-row {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: -1.5rem;
@@ -644,7 +898,6 @@ a:hover {
   justify-content: space-between;
 }
 .Page .Page-row > * {
-  box-sizing: border-box;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -692,7 +945,6 @@ a:hover {
 .Advantages .Advantages-row {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: -1.5rem;
@@ -701,7 +953,6 @@ a:hover {
   justify-content: center;
 }
 .Advantages .Advantages-row > * {
-  box-sizing: border-box;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -756,11 +1007,10 @@ a:hover {
 .Advantages .AdvantagesText {
   margin-top: -3rem;
   margin-bottom: 4rem;
-  padding: 5rem 2rem 3rem;
+  padding: 5rem 2rem 2rem;
   transition: box-shadow 0.6s ease;
   background-color: white;
   border-radius: 4px;
-  height: 40%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .Advantages .AdvantagesText {
@@ -797,10 +1047,15 @@ a:hover {
 .Sale {
   text-align: center;
   background-image: url("../images/Page/block-2-bg.png");
-  background-size: 100% 100%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom center;
   padding-bottom: 6rem;
+}
+@media (min-width: 1919px) {
+  .Sale {
+    background-size: 100% auto;
+  }
 }
 @media (max-width: 575px), (min-width: 768px) and (max-width: 991px) {
   .Sale {
@@ -810,7 +1065,6 @@ a:hover {
 .Sale .Sale-row {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: -1.5rem;
@@ -819,7 +1073,6 @@ a:hover {
   justify-content: space-between;
 }
 .Sale .Sale-row > * {
-  box-sizing: border-box;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -939,7 +1192,6 @@ a:hover {
 .Gallery .Gallery-row {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: -0.5rem;
@@ -948,7 +1200,6 @@ a:hover {
   justify-content: center;
 }
 .Gallery .Gallery-row > * {
-  box-sizing: border-box;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
@@ -1059,7 +1310,6 @@ a:hover {
 .Reviews .Reviews-row {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: -1.5rem;
@@ -1068,7 +1318,6 @@ a:hover {
   justify-content: space-between;
 }
 .Reviews .Reviews-row > * {
-  box-sizing: border-box;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -1280,7 +1529,6 @@ a:hover {
 .Team .Team-row {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: -0.5rem;
@@ -1289,7 +1537,6 @@ a:hover {
   justify-content: center;
 }
 .Team .Team-row > * {
-  box-sizing: border-box;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
@@ -1346,7 +1593,6 @@ a:hover {
 .Shop .Shop-row {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: -1.5rem;
@@ -1355,7 +1601,6 @@ a:hover {
   justify-content: space-between;
 }
 .Shop .Shop-row > * {
-  box-sizing: border-box;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -1395,7 +1640,6 @@ a:hover {
 .Rubric .Rubric-row {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: 0;
@@ -1404,7 +1648,6 @@ a:hover {
   justify-content: space-between;
 }
 .Rubric .Rubric-row > * {
-  box-sizing: border-box;
   padding-right: 0;
   padding-left: 0;
 }
@@ -1431,7 +1674,6 @@ a:hover {
   min-height: 10.8rem;
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex: 0 1 auto;
   flex-direction: row;
   margin-right: 0;
@@ -1440,7 +1682,6 @@ a:hover {
   justify-content: center;
 }
 .Rubric .Rubric-textWrap > * {
-  box-sizing: border-box;
   padding-right: 0;
   padding-left: 0;
 }
