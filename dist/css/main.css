@@ -73,6 +73,14 @@ a:hover {
   top: 0;
   z-index: 999;
 }
+@media (min-width: 992px) and (max-width: 1199px), (min-width: 1200px) {
+  .Header.Header_mini .Header-logoText {
+    height: 0;
+  }
+  .Header.Header_mini .Header-logo img {
+    height: 3.5rem;
+  }
+}
 .Header .Header-row {
   display: flex;
   flex-wrap: wrap;
@@ -88,18 +96,18 @@ a:hover {
   padding-left: 1.5rem;
 }
 .Header .Header-logoText {
+  transition: all .5s;
+  will-change: height;
+  overflow: hidden;
   margin: 0;
   text-align: center;
+  height: 3.6rem;
 }
-.Header .Header-col {
-  flex-basis: 100%;
-  width: 100%;
-}
-@media (min-width: 576px) {
-  .Header .Header-col {
-    flex-basis: auto;
-    width: auto;
-  }
+.Header .Header-logo img {
+  will-change: height;
+  transition: all .5s;
+  height: 5rem;
+  width: auto;
 }
 @media (max-width: 575px) {
   .Header .Header-col {
@@ -109,21 +117,11 @@ a:hover {
 }
 .Header .Header-col_logo {
   text-align: center;
+  flex-basis: 100%;
+  width: 100%;
 }
 @media (min-width: 576px) {
-  .Header .Header-col_phone {
-    flex-basis: 50%;
-    width: 50%;
-  }
-}
-@media (min-width: 768px) {
-  .Header .Header-col_phone {
-    flex-basis: 33%;
-    width: 33%;
-  }
-}
-@media (min-width: 992px) {
-  .Header .Header-col_phone {
+  .Header .Header-col_logo {
     flex-basis: auto;
     width: auto;
   }
@@ -144,17 +142,22 @@ a:hover {
     position: relative;
     background-color: #05020e;
   }
-  .Header .Header-col_social {
-    margin-left: auto;
-    margin-top: 1rem;
-  }
-  .Header .Header-col_logo {
-    margin-bottom: -4.5rem;
-  }
 }
 .Phone {
   margin: -0.5rem;
   text-align: center;
+}
+@media (min-width: 576px) {
+  .Phone {
+    flex-basis: 50%;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .Phone {
+    flex-basis: auto;
+    width: auto;
+  }
 }
 .Phone > * {
   margin: 0 .5rem;
@@ -169,8 +172,15 @@ a:hover {
 .Phone .Phone-social {
   margin: 0 auto;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .Phone {
+    margin-left: auto;
+    margin-top: -4rem;
+  }
+}
 @media (min-width: 576px) and (max-width: 767px) {
   .Phone {
+    margin-top: -4rem;
     text-align: right;
   }
 }
@@ -243,9 +253,10 @@ a:hover {
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  padding: 0 0 2rem 0;
   height: 100vh;
   max-height: 750px;
-  min-height: 405px;
+  min-height: 670px;
   overflow: hidden;
   background-image: url(../images/MainPage/video-bg.jpg);
   background-size: auto 100%;
@@ -273,10 +284,9 @@ a:hover {
 }
 .VideoBlock .VideoBlock-wrap {
   text-align: center;
-  width: 60%;
   margin: auto;
   position: relative;
-  padding-top: 9.5rem;
+  padding-top: 9.1rem;
 }
 @media (max-width: 575px), (min-width: 576px) and (max-width: 767px) {
   .VideoBlock .VideoBlock-wrap {
@@ -287,7 +297,7 @@ a:hover {
 @media (min-width: 768px) and (max-width: 991px) {
   .VideoBlock .VideoBlock-wrap {
     width: 100%;
-    padding-top: 12.2rem;
+    padding-top: 12.1rem;
   }
 }
 .VideoBlock .VideoBlock-title {
@@ -309,7 +319,12 @@ a:hover {
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .VideoBlock {
-    min-height: 320px;
+    min-height: 600px;
+  }
+}
+@media (max-width: 575px) {
+  .VideoBlock {
+    min-height: 800px;
   }
 }
 .Video {
@@ -745,7 +760,7 @@ a:hover {
   line-height: 24px;
 }
 .ChangeForm {
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: -2rem;
 }
 .ChangeForm .ChangeForm-row {
@@ -794,10 +809,53 @@ a:hover {
 .ChangeForm .ChangeForm-submit {
   color: white;
 }
+.ModalForm {
+  margin-top: 5rem;
+  margin-bottom: -2rem;
+}
+.ModalForm .ChangeForm-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  flex-direction: row;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -2rem;
+}
+.ModalForm .ChangeForm-row > * {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.ModalForm .ChangeForm-col.ChangeForm-col_name {
+  flex-basis: 100%;
+  width: 100%;
+}
+.ModalForm .ChangeForm-col.ChangeForm-col_phone {
+  flex-basis: 100%;
+  width: 100%;
+}
+.ModalForm .ChangeForm-col.ChangeForm-col_submit {
+  margin-left: auto;
+}
+@media (max-width: 575px), (min-width: 576px) and (max-width: 767px), (min-width: 768px) and (max-width: 991px), (min-width: 1200px) {
+  .ModalForm .ChangeForm-col.ChangeForm-col_submit {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+.ModalForm .ChangeForm-submit {
+  color: white;
+  text-align: center;
+}
 .FormBlock {
   padding: 2rem;
   border-radius: 4px;
   background-color: rgba(5, 2, 14, 0.5);
+}
+.FormBlock.ModalForm {
+  background-color: rgba(5, 2, 14, 0.8);
 }
 .Form.Form-white {
   color: white;
@@ -807,8 +865,18 @@ a:hover {
   font-weight: 500;
   line-height: 1.2;
   display: block;
-  width: 100%;
   margin-bottom: 1.7rem;
+  text-align: left;
+}
+.Form .close {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  display: block;
+  margin-bottom: 2.2rem;
+}
+.Form .Form-legend-modal {
+  margin-bottom: 2.2rem;
 }
 .Form label {
   font-size: 1.4rem;
@@ -820,6 +888,7 @@ a:hover {
 .Form .Form-group {
   margin-bottom: 2rem;
   white-space: nowrap;
+  text-align: left;
 }
 .Form .Form-group * {
   white-space: normal;
@@ -877,6 +946,57 @@ a:hover {
 }
 .Form .Form-checkbox ~ label {
   line-height: 2rem;
+}
+.Menu {
+  flex-basis: 100%;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .Menu {
+    flex-basis: auto;
+    width: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Menu {
+    margin-left: auto;
+    margin-top: -4rem;
+    padding: 1rem 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .Menu {
+    margin-top: -2rem;
+    margin-left: auto;
+  }
+}
+@media (max-width: 575px) {
+  .Menu {
+    text-align: center;
+  }
+}
+.Menu .Menu-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  flex-direction: row;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.Menu .Menu-list > * {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+.Menu .Menu-link {
+  display: inline-block;
+}
+#map {
+  width: 100%;
+  height: 400px;
 }
 .Page {
   background-image: url("../images/Page/block-1-bg.png");
@@ -1769,5 +1889,28 @@ a:hover {
 @media (min-width: 1919px) {
   .Rubric .Rubric-col {
     font-size: 70%;
+  }
+}
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+  background-color: #000;
+  display: none;
+}
+#boxes .window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 9999;
+}
+#boxes #dialog {
+  width: 50%;
+}
+@media (max-width: 575px), (min-width: 576px) and (max-width: 767px) {
+  #boxes #dialog {
+    width: 100%;
   }
 }

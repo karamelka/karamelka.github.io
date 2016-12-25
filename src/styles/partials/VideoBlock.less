@@ -3,9 +3,10 @@
 	display: flex;
 	align-items: center;
 	box-sizing: border-box;
+	padding: 0 0 2rem 0;
 	height: 100vh;
 	max-height: 750px;
-	min-height: 405px;
+	min-height: 670px;
 	overflow: hidden;
 	background-image: url(../images/MainPage/video-bg.jpg);
 	background-size: auto 100%;
@@ -30,17 +31,17 @@
 	}
 	.VideoBlock-wrap {
 		text-align: center;
-		width: 60%;
+		//width: 60%;
 		margin: auto;
 		position: relative;
-		padding-top: 9.5rem;
+		padding-top: 9.1rem;
 		@media @xs, @sm {
 			width: 100%;
 			padding-top: 0;
 		}
 		@media @md {
 			width: 100%;
-			padding-top: 12.2rem;
+			padding-top: 12.1rem;
 		}
 	}
 	.VideoBlock-title {
@@ -59,7 +60,10 @@
 		}
 	}
 	@media @sm {
-		min-height: 320px;
+		min-height: 600px;
+	}
+	@media @xs {
+		min-height: 800px;
 	}
 }
 

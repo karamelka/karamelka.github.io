@@ -1,6 +1,8 @@
 .Phone {
 	margin: -.5rem;
 	text-align: center;
+	.sm-col(50%);
+	.md-col(auto);
 	& > * {
 		margin: 0 .5rem;
 	}
@@ -14,7 +16,12 @@
 	.Phone-social {
 		margin: 0 auto;
 	}
+	@media @md {
+		margin-left: auto;
+		margin-top: -4rem;
+	}
 	@media @sm {
+		margin-top: -4rem;
 		text-align: right;
 	}
 }

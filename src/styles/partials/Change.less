@@ -44,7 +44,7 @@
 }
 
 .ChangeForm {
-	margin-top: 5rem;
+	margin-top: 3rem;
 	margin-bottom: -2rem;
 	.ChangeForm-row {
 		.flex();
@@ -70,5 +70,36 @@
 	}
 	.ChangeForm-submit {
 		color: white;
+	}
+}
+.ModalForm {
+	margin-top: 5rem;
+	margin-bottom: -2rem;
+	.ChangeForm-row {
+		.flex();
+		align-items: center;
+		justify-content:space-between;
+		margin-bottom: -2rem;
+	}
+	.ChangeForm-col {
+		&.ChangeForm-col_name {
+			.xs-col(100%);
+			//.sm-col(50%);
+		}
+		&.ChangeForm-col_phone {
+			.xs-col(100%);
+			//.sm-col(50%);
+		}
+		&.ChangeForm-col_submit {
+			margin-left: auto;
+			@media @xs, @sm, @md, @xl {
+				text-align: center;
+				margin: 0 auto;
+			}
+		}
+	}
+	.ChangeForm-submit {
+		color: white;
+		text-align: center;
 	}
 }

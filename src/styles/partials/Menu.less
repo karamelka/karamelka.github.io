@@ -1,0 +1,35 @@
+.Menu {
+	.xs-col(100%);
+	.sm-col(auto);
+	@media @md {
+		margin-left: auto;
+		margin-top:  -4rem;
+		padding: 1rem 0;
+	}
+	@media @sm {
+		margin-top: -2rem;
+		margin-left: auto;
+	}
+	@media @xs {
+		text-align: center;
+	}
+	.Menu-list {
+		.inline-flex(1rem);
+		flex-wrap: nowrap;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.Menu-link {
+		display: inline-block;
+		//text-transform: uppercase;
+	}
+	.Menu-item {
+		//&:not(:last-child):after {
+		//	content: '|';
+		//	display: inline-block;
+		//	padding: 0 .5rem;
+		//	margin-left: -.3rem;
+		//}
+	}
+}

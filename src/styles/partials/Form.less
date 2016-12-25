@@ -2,6 +2,9 @@
 	padding: 2rem;
 	border-radius: 4px;
 	background-color: rgba(5, 2, 14, 0.5);
+	&.ModalForm {
+		background-color: rgba(5, 2, 14, 0.8);
+	}
 }
 
 .Form {
@@ -13,8 +16,18 @@
 		font-weight: 500;
 		line-height: 1.2;
 		display: block;
-		width: 100%;
 		margin-bottom: 1.7rem;
+		text-align: left;
+	}
+	.close {
+		font-size: 1.8rem;
+		font-weight: 500;
+		line-height: 1.2;
+		display: block;
+		margin-bottom: 2.2rem;
+	}
+	.Form-legend-modal {
+		margin-bottom: 2.2rem;
 	}
 	label {
 		font-size: 1.4rem;
@@ -26,6 +39,7 @@
 	.Form-group {
 		margin-bottom: 2rem;
 		white-space: nowrap;
+		text-align: left;
 		* {
 			white-space: normal;
 		}

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Caramel</title>
-	<link rel="stylesheet" href="dist/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Caramel</title>
+    <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
 <header>
@@ -21,45 +21,12 @@
 						Мережа студій pole dance <br> №1 в Україні
 					</p>
 				</div>
-				<div class="Header-col Header-col_phone">
-					<div class="Phone">
-						<div class="Social Phone-social">
-							<ul class="Social-list">
-								<li class="Social-item">
-									<a href="#" class="Social-link Social-link_phone">
-										<img src="dist/images/phone-icon.svg" alt="">
-									</a>
-								</li>
-								<li class="Social-item">
-									<a href="#" class="Social-link Social-link_viber">
-										<img src="dist/images/MainPage/viber.svg" alt="">
-									</a>
-								</li>
-								<li class="Social-item">
-									<a href="#" class="Social-link Social-link_whatsapp">
-										<img src="dist/images/whatsapp-icon.svg" alt="">
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!--<a href="#" class="Button Button_social">-->
-							<!--<img src="dist/images/phone-icon.svg" alt="phone">-->
-						<!--</a>-->
-						<!--<a href="#" class="Button Button_social">-->
-							<!--<img src="dist/images/phone-icon.svg" alt="phone">-->
-						<!--</a>-->
-						<!--<a href="#" class="Button Button_social">-->
-							<!--<img src="dist/images/phone-icon.svg" alt="phone">-->
-						<!--</a>-->
-						<a href="tel:380681773030" class="Phone-link">+38 068 177 30 30</a>
-					</div>
-				</div>
-				<div class="Header-col Header-col_social">
-					<div class="Social Social_header">
+				<div class="Header-col Header-col_phone Phone">
+					<div class="Social Phone-social">
 						<ul class="Social-list">
 							<li class="Social-item">
-								<a href="#" class="Social-link Social-link_vk">
-									<img src="dist/images/MainPage/vk.svg" alt="">
+								<a href="#" class="Social-link Social-link_phone">
+									<img src="dist/images/phone-icon.svg" alt="">
 								</a>
 							</li>
 							<li class="Social-item">
@@ -68,29 +35,37 @@
 								</a>
 							</li>
 							<li class="Social-item">
-								<a href="#" class="Social-link Social-link_twitter">
-									<img src="dist/images/MainPage/twitter.svg" alt="">
-								</a>
-							</li>
-						</ul>
-						<ul class="Social-list">
-							<li class="Social-item">
-								<a href="#" class="Social-link Social-link_facebook">
-									<img src="dist/images/MainPage/facebook.svg" alt="">
-								</a>
-							</li>
-							<li class="Social-item">
-								<a href="#" class="Social-link Social-link_youtube">
-									<img src="dist/images/MainPage/youtube.svg" alt="">
-								</a>
-							</li>
-							<li class="Social-item">
-								<a href="#" class="Social-link Social-link_instagram">
-									<img src="dist/images/MainPage/instagram.svg" alt="">
+								<a href="#" class="Social-link Social-link_whatsapp">
+									<img src="dist/images/whatsapp-icon.svg" alt="">
 								</a>
 							</li>
 						</ul>
 					</div>
+					<a href="tel:380681773030" class="Phone-link">+38 068 177 30 30</a>
+				</div>
+				<div class="Header-col Header-col_social Menu">
+					<ul class="Menu-list">
+						<li class="Menu-item">
+							<a href="anchor:#dance" class="Menu-link">
+								Aerial Dance
+							</a>
+						</li>
+						<li class="Menu-item">
+							<a href="anchor:#subscribe" class="Menu-link">
+								Pole Dance
+							</a>
+						</li>
+						<li class="Menu-item">
+							<a href="anchor:#about" class="Menu-link">
+								Caramelka
+							</a>
+						</li>
+						<li class="Menu-item">
+							<a href="anchor:#sale" class="Menu-link">
+								Школа інструкторів
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -114,10 +89,259 @@
 				<a href="#" class="Button Button_circle Button_play" id="videoPlayBtn">
 					<img src="dist/images/MainPage/play-icon.svg" alt="play">
 				</a>
+				<div class="FormBlock ChangeForm">
+					<form action="" class="Form Form-white">
+						<legend class="Form-legend">
+							Заполните форму для получения бесплатного занятия
+						</legend>
+						<div class="ChangeForm-row">
+							<div class="ChangeForm-col ChangeForm-col_name">
+								<div class="Form-group">
+									<label for="">
+										Ваше имя
+									</label>
+									<input type="text" class="Form-control">
+								</div>
+							</div>
+							<div class="ChangeForm-col ChangeForm-col_phone">
+								<div class="Form-group">
+									<label for="">
+										Ваш номер телефона
+									</label>
+									<input type="text" class="Form-control">
+								</div>
+							</div>
+							<div class="ChangeForm-col ChangeForm-col_subscribe">
+								<div class="Form-group">
+									<input type="checkbox" checked class="Form-control Form-control_invisible" id="subscribeCheckbox">
+									<div class="Form-checkbox"></div>
+									<label for="subscribeCheckbox">
+										Получать полезные советы и информацию об акциях
+									</label>
+								</div>
+							</div>
+							<div class="ChangeForm-col ChangeForm-col_submit">
+								<div class="Form-group">
+									<button class="Button Button_md ChangeForm-submit">
+										Оставить заявку на бесплатное занятие
+									</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="Change">
+	<div class="Rubric" id="dance">
+		<div class="Rubric-row">
+			<div class="Rubric-col Rubric-col_aerial">
+				<div class="Rubric-img">
+					<img src="dist/images/MainPage/aerial-dance.jpg" alt="aerial">
+				</div>
+				<div class="Rubric-wrap">
+					<div class="Rubric-textWrap">
+						<div class="Rubric-text">
+							<h3 class="Rubric-title">
+								Aerial Dance
+							</h3>
+							<p class="Rubric-desc">
+								Танець та акробатика на пiлонi
+							</p>
+						</div>
+					</div>
+					<a href="aerialdance.html" class="Button Button_md Rubric-button">
+						Хочу научится Aerial dance
+					</a>
+				</div>
+			</div>
+			<div class="Rubric-col Rubric-col_pole">
+				<div class="Rubric-img">
+					<img src="dist/images/MainPage/pole-dance.jpg" alt="pole">
+				</div>
+				<div class="Rubric-wrap">
+					<div class="Rubric-textWrap">
+						<div class="Rubric-text">
+							<h3 class="Rubric-title">
+								Pole Dance
+							</h3>
+							<p class="Rubric-desc">
+								Танець та акробатика на пiлонi
+							</p>
+						</div>
+					</div>
+					<a href="#dialog" name="modal" class="Button Button_md Rubric-button">
+						Хочу научится Pole dance
+					</a>
+				</div>
+			</div>
+			<div class="Rubric-col Rubric-col_child">
+				<div class="Rubric-img">
+					<img src="dist/images/MainPage/child-dance.jpg" alt="caramelka">
+				</div>
+				<div class="Rubric-wrap">
+					<div class="Rubric-textWrap">
+						<div class="Rubric-text">
+							<h3 class="Rubric-title">
+								Caramelka
+							</h3>
+							<p class="Rubric-desc">
+								Танець та акробатика на пiлонi
+							</p>
+						</div>
+					</div>
+					<a href="#" class="Button Button_md Rubric-button">
+						Хочу научится Aerial dance
+					</a>
+				</div>
+			</div>
+			<div class="Rubric-col Rubric-col_trainer">
+				<div class="Rubric-img">
+					<img src="dist/images/MainPage/trainer-dance.jpg" alt="trener">
+				</div>
+				<div class="Rubric-wrap">
+					<div class="Rubric-textWrap">
+						<div class="Rubric-text">
+							<h3 class="Rubric-title">
+								Школа iнструкторiв
+							</h3>
+							<p class="Rubric-desc">
+								Танець та акробатика на пiлонi
+							</p>
+						</div>
+					</div>
+					<a href="#" class="Button Button_md Rubric-button">
+						Хочу научится Serial dance
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="Sale" id="subscribe">
+		<div class="container">
+			<div class="Title-white">
+				<h2>Покупайте абонимент <span>со скидкой</span> прямо сейчас</h2>
+			</div>
+			<div class="Sale-row">
+				<div class="Sale-col">
+					<div class="Sale-items">
+						<div class="Sale-img">
+							<img src="dist/images/Page/sale-1.png" alt="sale-10">
+						</div>
+						<div class="Sale-info">
+							<p class="SaleBuy">
+								Абонимент на 1 месяц
+							</p>
+							<div class="SaleLast">
+								Старая цена 6000грн
+							</div>
+							<div class="SaleNew">
+								5145грн.
+							</div>
+							<a href="#" class="Button Button_Sale ">
+								Купить
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="Sale-col">
+					<div class="Sale-items">
+						<div class="Sale-img">
+							<img src="dist/images/Page/sale-2.png" alt="sale-10">
+						</div>
+						<div class="Sale-info">
+							<p class="SaleBuy">
+								Абонимент на 6 месяц
+							</p>
+							<div class="SaleLast">
+								Старая цена 6000грн
+							</div>
+							<div class="SaleNew">
+								5145грн.
+							</div>
+							<a href="#" class="Button Button_Sale ">
+								Купить
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="Sale-col">
+					<div class="Sale-items">
+						<div class="Sale-img">
+							<img src="dist/images/Page/sale-3.png" alt="sale-10">
+						</div>
+						<div class="Sale-info">
+							<p class="SaleBuy">
+								Абонимент на 12 месяц
+							</p>
+							<div class="SaleLast">
+								Старая цена 6000грн
+							</div>
+							<div class="SaleNew">
+								5145грн.
+							</div>
+							<a href="#" class="Button Button_Sale ">
+								Купить
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="Founder" id="about">
+		<div class="container">
+			<div class="Founder-row">
+				<div class="Founder-col Founder-col_image">
+					<div class="Founder-image">
+						<img src="dist/images/MainPage/oksana.png" alt="oksana">
+					</div>
+				</div>
+				<div class="Founder-col Founder-col_about">
+					<div class="Founder-wrap">
+						<h4 class="Founder-title">
+							Засновниця студії Оксана Карамеліна
+						</h4>
+						<ul class="About Founder-about">
+							<li class="AboutItem">
+								Ініціатор руху Pole Dance у Західному регіоні України
+							</li>
+							<li class="AboutItem">
+								Президент Української Федерації Повітряної Акробатики та Пілонного Спорту
+							</li>
+							<li class="AboutItem">
+								Топ 10 кращих Pole Dancers 2014
+							</li>
+							<li class="AboutItem">
+								Головний тренер України 2014
+							</li>
+							<li class="AboutItem">
+								Переможниця Exotic Pole Dance Ukraine 2011
+							</li>
+							<li class="AboutItem">
+								Бронзовий призер Miss Pole Dance Ukraine 2011
+							</li>
+						</ul>
+						<p class="Founder-text">
+							«Я створила першу студію у Львові понад 7 років тому у власній квартирі в віддаленому мікрорайоні. Ще у
+							часи зародження нового напрямку в нашому місті існувала чимала армія прихильників таких оригінальних
+							тренувань! Ми разом збиралися вечорами, вивчали цікаві елементи та досягали нових висот. Хтось скидав
+							зайву вагу, хтось повертав увагу чоловіка а хтось і знайшов нового, нову кар’эру, нове життя! Історії моїх
+							учениць надихали мене розвинути маленьку мрію у велику мережу, щоб зробити цей спорт доступним у більшості
+							регіонів України! Адже Pole Dance міняє нас не лише ззовні, але й з середини! <br> <br>
+
+							Я рекомендую Pole Dance та повітряну гімнастику, як найкращий спосіб гартування сили волі, тіла та розуму.
+							Це фантастичний новий вид спорту, який дозволяє розпочати заняття у будь-якому віці та досягти значних
+							результатів! Ми можемо здійснити тут давні мрії та бажання!
+							А наші діти – реалізувати справжні спортивні амбіції та стати чемпіонами у майбутньому олімпійському виді
+							спорт»
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="Change" id="sale">
 		<div class="container">
 			<h2 class="Change-title">
 				Почни <span class="pink">змінюватися</span> вже сьогодні
@@ -197,216 +421,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="Rubric">
-		<div class="Rubric-row">
-			<div class="Rubric-col Rubric-col_aerial">
-				<div class="Rubric-img">
-					<img src="dist/images/MainPage/aerial-dance.jpg" alt="aerial">
-				</div>
-				<div class="Rubric-wrap">
-					<div class="Rubric-textWrap">
-						<div class="Rubric-text">
-							<h3 class="Rubric-title">
-								Aerial Dance
-							</h3>
-							<p class="Rubric-desc">
-								Танець та акробатика на пiлонi
-							</p>
-						</div>
-					</div>
-					<a href="aerialdance.html" class="Button Button_md Rubric-button">
-						Хочу научится Aerial dance
-					</a>
-				</div>
-			</div>
-			<div class="Rubric-col Rubric-col_pole">
-				<div class="Rubric-img">
-					<img src="dist/images/MainPage/pole-dance.jpg" alt="pole">
-				</div>
-				<div class="Rubric-wrap">
-					<div class="Rubric-textWrap">
-						<div class="Rubric-text">
-							<h3 class="Rubric-title">
-								Pole Dance
-							</h3>
-							<p class="Rubric-desc">
-								Танець та акробатика на пiлонi
-							</p>
-						</div>
-					</div>
-					<a href="#" class="Button Button_md Rubric-button">
-						Хочу научится Pole dance
-					</a>
-				</div>
-			</div>
-			<div class="Rubric-col Rubric-col_child">
-				<div class="Rubric-img">
-					<img src="dist/images/MainPage/child-dance.jpg" alt="caramelka">
-				</div>
-				<div class="Rubric-wrap">
-					<div class="Rubric-textWrap">
-						<div class="Rubric-text">
-							<h3 class="Rubric-title">
-								Caramelka
-							</h3>
-							<p class="Rubric-desc">
-								Танець та акробатика на пiлонi
-							</p>
-						</div>
-					</div>
-					<a href="#" class="Button Button_md Rubric-button">
-						Хочу научится Aerial dance
-					</a>
-				</div>
-			</div>
-			<div class="Rubric-col Rubric-col_trainer">
-				<div class="Rubric-img">
-					<img src="dist/images/MainPage/trainer-dance.jpg" alt="trener">
-				</div>
-				<div class="Rubric-wrap">
-					<div class="Rubric-textWrap">
-						<div class="Rubric-text">
-							<h3 class="Rubric-title">
-								Школа iнструкторiв
-							</h3>
-							<p class="Rubric-desc">
-								Танець та акробатика на пiлонi
-							</p>
-						</div>
-					</div>
-					<a href="#" class="Button Button_md Rubric-button">
-						Хочу научится Serial dance
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="Sale">
-		<div class="container">
-			<div class="Title-white">
-				<h2>Покупайте абонимент <span>со скидкой</span> прямо сейчас</h2>
-			</div>
-			<div class="Sale-row">
-				<div class="Sale-col">
-					<div class="Sale-items">
-						<div class="Sale-img">
-							<img src="dist/images/Page/sale-1.png" alt="sale-10">
-						</div>
-						<div class="Sale-info">
-							<p class="SaleBuy">
-								Абонимент на 1 месяц
-							</p>
-							<div class="SaleLast">
-								Старая цена 6000грн
-							</div>
-							<div class="SaleNew">
-								5145грн.
-							</div>
-							<a href="#" class="Button Button_Sale ">
-								Купить
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="Sale-col">
-					<div class="Sale-items">
-						<div class="Sale-img">
-							<img src="dist/images/Page/sale-2.png" alt="sale-10">
-						</div>
-						<div class="Sale-info">
-							<p class="SaleBuy">
-								Абонимент на 6 месяц
-							</p>
-							<div class="SaleLast">
-								Старая цена 6000грн
-							</div>
-							<div class="SaleNew">
-								5145грн.
-							</div>
-							<a href="#" class="Button Button_Sale ">
-								Купить
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="Sale-col">
-					<div class="Sale-items">
-						<div class="Sale-img">
-							<img src="dist/images/Page/sale-3.png" alt="sale-10">
-						</div>
-						<div class="Sale-info">
-							<p class="SaleBuy">
-								Абонимент на 12 месяц
-							</p>
-							<div class="SaleLast">
-								Старая цена 6000грн
-							</div>
-							<div class="SaleNew">
-								5145грн.
-							</div>
-							<a href="#" class="Button Button_Sale ">
-								Купить
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="Founder">
-		<div class="container">
-			<div class="Founder-row">
-				<div class="Founder-col Founder-col_image">
-					<div class="Founder-image">
-						<img src="dist/images/MainPage/oksana.png" alt="oksana">
-					</div>
-				</div>
-				<div class="Founder-col Founder-col_about">
-					<div class="Founder-wrap">
-						<h4 class="Founder-title">
-							Засновниця студії Оксана Карамеліна
-						</h4>
-						<ul class="About Founder-about">
-							<li class="AboutItem">
-								Ініціатор руху Pole Dance у Західному регіоні України
-							</li>
-							<li class="AboutItem">
-								Президент Української Федерації Повітряної Акробатики та Пілонного Спорту
-							</li>
-							<li class="AboutItem">
-								Топ 10 кращих Pole Dancers 2014
-							</li>
-							<li class="AboutItem">
-								Головний тренер України 2014
-							</li>
-							<li class="AboutItem">
-								Переможниця Exotic Pole Dance Ukraine 2011
-							</li>
-							<li class="AboutItem">
-								Бронзовий призер Miss Pole Dance Ukraine 2011
-							</li>
-						</ul>
-						<p class="Founder-text">
-							«Я створила першу студію у Львові понад 7 років тому у власній квартирі в віддаленому мікрорайоні. Ще у
-							часи зародження нового напрямку в нашому місті існувала чимала армія прихильників таких оригінальних
-							тренувань! Ми разом збиралися вечорами, вивчали цікаві елементи та досягали нових висот. Хтось скидав
-							зайву вагу, хтось повертав увагу чоловіка а хтось і знайшов нового, нову кар’эру, нове життя! Історії моїх
-							учениць надихали мене розвинути маленьку мрію у велику мережу, щоб зробити цей спорт доступним у більшості
-							регіонів України! Адже Pole Dance міняє нас не лише ззовні, але й з середини! <br> <br>
-							
-							Я рекомендую Pole Dance та повітряну гімнастику, як найкращий спосіб гартування сили волі, тіла та розуму.
-							Це фантастичний новий вид спорту, який дозволяє розпочати заняття у будь-якому віці та досягти значних
-							результатів! Ми можемо здійснити тут давні мрії та бажання!
-							А наші діти – реалізувати справжні спортивні амбіції та стати чемпіонами у майбутньому олімпійському виді
-							спорт»
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div class="Map">
-		<img src="dist/images/MainPage/map-image.jpg" alt="map" class="paysage" style="display: block;">
+		<div id="map"></div>
+		<!--<img src="dist/images/MainPage/map-image.jpg" alt="map" class="paysage" style="display: block;">-->
 	</div>
 </main>
 <footer>
@@ -494,13 +511,71 @@
 							</li>
 						</ul>
 					</div>
-					</ul>
 				</div>
 			</div>
 		</div>
+	</div>
 </footer>
+
+
+
+<div id="boxes">
+    <div id="dialog" class="window">
+        <div class="FormBlock ModalForm">
+            <form action="callback.php" method="POST" role="form" class="Form Form-white">
+                <div class="ChangeForm-row">
+                        <legend class="Form-legend-modal">
+                            Заполните форму для получения бесплатного занятия
+                        </legend>
+                        <a href="" class="close">Закрыть</a>
+                </div>
+                <div class="ChangeForm-row">
+                    <div class="ChangeForm-col ChangeForm-col_name">
+                        <div class="Form-group">
+                            <label for="">
+                                Ваше имя
+                            </label>
+                            <input type="text"  name="name" id="nameInput"  class="Form-control">
+                        </div>
+                    </div>
+                    <div class="ChangeForm-col ChangeForm-col_phone">
+                        <div class="Form-group">
+                            <label for="">
+                                Ваш номер телефона
+                            </label>
+                            <input type="text"  name="phone" id="phoneInput"  class="Form-control">
+                        </div>
+                    </div>
+                    <div class="ChangeForm-col ChangeForm-col_subscribe">
+                        <div class="Form-group">
+                            <input type="checkbox" checked class="Form-control Form-control_invisible" id="subscribeCheckbox">
+                            <div class="Form-checkbox"></div>
+                            <label for="subscribeCheckbox">
+                                Получать полезные советы и информацию об акциях
+                            </label>
+                        </div>
+                    </div>
+                    <div class="ChangeForm-col ChangeForm-col_submit">
+                        <div class="Form-group">
+                            <button class="Button Button_md ChangeForm-submit">
+                                Оставить заявку на бесплатное занятие
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Маска, которая затемняет весь экран -->
+    <div id="mask"></div>
+
+
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="https://www.youtube.com/iframe_api"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="bower_components/gmaps/gmaps.min.js"></script>
 <script src="/dist/js/main.js"></script>
+<script src="dist/js/main.js"></script>
+<script src="src/js/main.js"></script>
 </body>
 </html>
