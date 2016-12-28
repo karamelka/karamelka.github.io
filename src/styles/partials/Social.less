@@ -17,7 +17,13 @@
 		margin: 0;
 	}
 	.Social-item {
+		position: relative;
 		margin: .5rem;
+		&:hover {
+			.Social-dropdown {
+				display: block;
+			}
+		}
 	}
 	.Social-link {
 		display: inline-flex;
@@ -78,5 +84,36 @@
 				box-shadow: @hoff @soc-voff @blur #25D366;
 			}
 		}
+	}
+}
+
+.SocialDrop {
+	display: none;
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-bottom: 1rem;
+	&:hover {
+		display: block;
+	}
+	&.SocialDrop_bottom {
+		bottom: auto;
+		top: 100%;
+	}
+	.SocialDrop-list {
+		background-color: rgba(0,0,0, .8);
+		padding: 1rem;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+		border-radius: 2px;
+	}
+	.SocialDrop-item {
+		padding: .2rem 0;
+	}
+	.SocialDrop-link {
+		text-transform: uppercase;
+		white-space: nowrap;
 	}
 }

@@ -119,6 +119,21 @@ $(function () {
 		},
 		icon: 'dist/images/MainPage/pin-icon.svg'
 	});
+	
+	$('[data-action^="#map/setCenter/"]').on('click', function (e) {
+		e.preventDefault();
+		var coords = $(this).data('action').split('/');
+		map.setCenter(coords[2], coords[3]);
+		map.setZoom(15);
+	});
+	
+	
+	/**
+	 * Map zoom off
+	 */
+	$('.overlay').click(function () {
+		$(this).remove();
+	});
 })
 
 $(document).ready(function() {
@@ -153,5 +168,4 @@ $(document).ready(function() {
 		$(this).hide();
 		$('.window').hide();
 	});
-
 });
